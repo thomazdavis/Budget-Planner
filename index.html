@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Budget Planner</h1>
+            <p>Version 1.0.0</p>
+        </div>
+
+        <div class="dashboard">
+            <div class="card balance">
+                <h2>Current Balance</h2>
+                <div class="amount">$2,500.00</div>
+            </div>
+            
+            <div class="card income">
+                <h2>Total Income</h2>
+                <div class="amount">$4,000.00</div>
+            </div>
+            
+            <div class="card expenses">
+                <h2>Total Expenses</h2>
+                <div class="amount">$1,500.00</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Add New Transaction</h2>
+            <form>
+                <div class="form-group">
+                    <label for="Category">Category</label>
+                    <select id="type" class="form-group input">
+                        <option value="Dining">Dining</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Income">Income</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="Enter description">
+                </div>
+                
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+                </div>
+                
+                <!--
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" class="form-group input">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                -->               
+
+                <button type="submit" class="btn">Add Transaction</button>
+            </form>
+        </div>
+
+        <div class="transactions">
+            <h2>Recent Transactions</h2>
+            <ul class="transaction-list">
+                <li class="transaction-item">
+                    <span>Salary</span>
+                    <span class="income-text">+$3,000.00</span>
+                </li>
+                <li class="transaction-item">
+                    <span>Rent</span>
+                    <span class="expense-text">-$1,200.00</span>
+                </li>
+                <li class="transaction-item">
+                    <span>Utilities</span>
+                    <span class="expense-text">-$150.00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
