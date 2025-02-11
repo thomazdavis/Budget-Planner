@@ -123,8 +123,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.getElementById('logout-btn').addEventListener('click', () => {
-    localStorage.removeItem('loggedIn');
-    // redirecting back to
-    window.location.href = 'login.html';
-});
