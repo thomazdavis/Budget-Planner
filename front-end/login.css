@@ -1,0 +1,53 @@
+/* Styling for the login page */
+.login-container {
+    max-width: 300px;
+    margin: 100px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing between elements */
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretches input and label to full width of the parent container */
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+form .form-group label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
