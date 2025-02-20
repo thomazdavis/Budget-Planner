@@ -1,4 +1,4 @@
-// Hardcoded credentials (You can replace this with a backend authentication in a real app)
+// Hardcoded credentials
 const correctUsername = 'admin';
 const correctPassword = 'admin';
 
@@ -15,7 +15,7 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
         localStorage.setItem('loggedIn', 'true');
 
         // Redirect to the Budget Planner page
-        window.location.href = 'index.html'; // Redirect to your budget planner page
+        window.location.href = 'index.html';
     } else {
         alert('Invalid username or password');
     }
